@@ -1,7 +1,5 @@
-#![feature(lang_items, start, panic_handler)]
+#![feature(lang_items, start)]
 #![no_std]
-
-extern crate libc;
 
 #[start]
 fn start(_argc: isize, _argv: *const *const u8) -> isize {
@@ -10,7 +8,6 @@ fn start(_argc: isize, _argv: *const *const u8) -> isize {
 
 #[cfg(not(test))]
 #[lang = "eh_personality"]
-#[no_mangle]
 pub extern "C" fn rust_eh_personality() {}
 
 #[cfg(not(test))]

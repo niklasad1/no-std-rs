@@ -4,4 +4,4 @@ version = "0.1.0"
 authors = ["Niklas Adofsson <niklas@parity.io>"]
 
 [dependencies]
-libc = { version = "0.2.42", default-features = false }
+libc = { version = "0.2.54", default-features = false }
