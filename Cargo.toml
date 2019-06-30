@@ -1,7 +1,8 @@
 [package]
+edition = "2018"
 name = "no_std"
 version = "0.1.0"
 authors = ["Niklas Adofsson <niklas@parity.io>"]
 
 [dependencies]
-libc = { version = "0.2.54", default-features = false }
+libc = { version = "0.2.58", default-features = false }
